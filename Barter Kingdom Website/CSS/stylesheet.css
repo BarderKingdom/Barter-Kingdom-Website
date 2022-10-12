@@ -1,0 +1,66 @@
+* {
+    
+    font-family: 'Montserrat', sans-serif;
+    background-color: #D9DDE0;
+    
+}
+
+
+
+/* .grid-container is the main CSS grid everything is in*/
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header header header header header'
+  'leftmenu . content . rightsidebar'
+  'leftmenu . content . rightsidebar'
+  'footer footer footer footer footer';
+  background-color: #D9DDE0;
+  grid-template-rows: 150px 200px;
+  column-gap: 50px;
+  row-gap: 5px;
+
+}
+
+/* .grid-item is all the area's inside the CSS grid*/
+
+.grid-item {
+  background-color: #7E8890;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+
+
+
+.header {
+  grid-area: header;
+}
+
+.leftmenu {
+  grid-area: leftmenu;
+  
+}
+
+.rightsidebar {
+  grid-area: rightsidebar;
+ 
+
+}
+
+.content {
+  grid-area: content;
+  height: 400px;
+
+}
+
+
+.footer {
+  grid-area: footer;
+  height: 85px;
+}
